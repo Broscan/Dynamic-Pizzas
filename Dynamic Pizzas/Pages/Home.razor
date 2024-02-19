@@ -1,0 +1,44 @@
+﻿@page "/"
+@using Dynamic_Pizzas.Models
+@using static System.Net.WebRequestMethods
+@using Newtonsoft.Json
+@inject HttpClient Http
+
+<PageTitle>Home</PageTitle>
+
+
+@if(Pizzas != null)
+{
+    <div class="row">
+
+    @foreach (PizzaModel pizzaModel in Pizzas)
+    {
+        <div class="col-3">
+            <div class="card">
+            <img src="@pizzaModel.ImageUrl" alt="Placeholder Image">
+            <div class="card-body">
+                <h5 class="card-title">@pizzaModel.Name</h5>
+                <p class="card-text">@pizzaModel.Description</p>
+                <p class="card-footer">@pizzaModel.Deliciousness</p>
+                <a class="btn btn-primary">Go to pizza</a>
+            </div>
+           </div>
+        </div>
+    }
+    </div>
+}
+
+@code {
+    public List<PizzaModel>? Pizzas { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await Http.GetAsync("sample-data/Pizzas/Pizzas.json");
+
+        string json = await response.Content.ReadAsStringAsync();
+
+        List<PizzaModel> pizzas = JsonConvert.DeserializeObject<List<PizzaModel>>(json);
+
+        Pizzas = pizzas;
+    }
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "Id": 1,
+    "Name": "Margarita",
+    "Description": "Classic pizza with sauce and cheese",
+    "Deliciousness": 7,
+    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+  },
+  {
+    "Id": 2,
+    "Name": "Marinara",
+    "Description": "Pizza marinara är en populär och lättsmält napolitansk variant toppad med endast tomatsås, extra jungfruolja, oregano och vitlök. Marinaran tros vara historiens äldsta tomat-toppade pizza. Det hävdas av den Europeiska kommissionens förordning att pizza Marinara introducerades år 1734.",
+    "Deliciousness": 7,
+    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+  },
+  {
+    "Id": 3,
+    "Name": "Quattro stagioni",
+    "Description": "Classic pizza with sauce and cheese",
+    "Deliciousness": 7,
+    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+  },
+  {
+    "Id": 4,
+    "Name": "Capricciosa",
+    "Description": "Classic pizza with sauce and cheese",
+    "Deliciousness": 7,
+    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+  },
+  {
+    "Id": 5,
+    "Name": "Quattro formaggi",
+    "Description": "Classic pizza with sauce and cheese",
+    "Deliciousness": 7,
+    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+  },
+  {
+    "Id": 6,
+    "Name": "Diavola",
+    "Description": "Classic pizza with sauce and cheese",
+    "Deliciousness": 7,
+    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+  },
+  {
+    "Id": 7,
+    "Name": "Frutti di mare",
+    "Description": "Classic pizza with sauce and cheese",
+    "Deliciousness": 7,
+    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+  },
+  {
+    "Id": 8,
+    "Name": "Pizza bianco",
+    "Description": "Classic pizza with sauce and cheese",
+    "Deliciousness": 7,
+    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+  },
+  {
+    "Id": 9,
+    "Name": "Margarasdita",
+    "Description": "Classic pizza with sauce and cheese",
+    "Deliciousness": 7,
+    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+  },
+  {
+    "Id": 10,
+    "Name": "Margarasdita",
+    "Description": "Classic pizza with sauce and cheese",
+    "Deliciousness": 7,
+    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+  },
+  {
+    "Id": 11,
+    "Name": "Margariasdta",
+    "Description": "Classic pizza with sauce and cheese",
+    "Deliciousness": 7,
+    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+  }
+]
