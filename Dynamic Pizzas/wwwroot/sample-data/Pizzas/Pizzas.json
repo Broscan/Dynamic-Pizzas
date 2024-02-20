@@ -1,79 +1,86 @@
 [
   {
-    "Id": 1,
-    "Name": "Margarita",
-    "Description": "Classic pizza with sauce and cheese",
-    "Deliciousness": 7,
+    "id": "1",
+    "name": "Margarita",
+    "description": "När man pratar om napolitansk pizza är det en margarita man syftar på. Toppingen består av sås gjord på San Marzano tomater, mozzarella, parmesan, färsk basilika, salt och extra jungfruolja. Pizzans topping är således en avbildning av färgerna på Italiens flagga. Tomaterna är ju röda, mozzarellan vit och basilikan grön. Om du vill göra en napolitansk pizza hemma så rekommenderar vi en pizzaugn från Ooni, ugnen det gör större skillnad än man tror.",
+    "deliciousness": "6",
     "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
   },
   {
-    "Id": 2,
-    "Name": "Marinara",
-    "Description": "Pizza marinara �r en popul�r och l�ttsm�lt napolitansk variant toppad med endast tomats�s, extra jungfruolja, oregano och vitl�k. Marinaran tros vara historiens �ldsta tomat-toppade pizza. Det h�vdas av den Europeiska kommissionens f�rordning att pizza Marinara introducerades �r 1734.",
-    "Deliciousness": 7,
-    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+    "id": "2",
+    "name": "Marinara",
+    "description": "Pizza marinara är en populär och lättsmält napolitansk variant toppad med endast tomatsås, extra jungfruolja, oregano och vitlök. Marinaran tros vara historiens äldsta tomat-toppade pizza. Det hävdas av den Europeiska kommissionens förordning att pizza Marinara introducerades år 1734.",
+    "deliciousness": "4",
+    "ImageUrl": "/sample-data/Pizzas/marinara.jpg"
   },
   {
-    "Id": 3,
-    "Name": "Quattro stagioni",
-    "Description": "Classic pizza with sauce and cheese",
-    "Deliciousness": 7,
-    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+    "id": "3",
+    "name": "Quattro stagioni",
+    "description": "Quattro stagioni (fyra säsonger) är en populär klassiker bland italienarna. Den är uppdelad i fyra sektioner med olika ingredienser, varvid varje sektion representerar en säsong på året. Kronärtskockor representerar vår, tomater eller basilika representerar sommar, svamp representerar höst och skinka, prosciutto eller oliver representerar vinter.",
+    "deliciousness": "8",
+    "ImageUrl": "/sample-data/Pizzas/quattro.jpg"
   },
   {
-    "Id": 4,
-    "Name": "Capricciosa",
-    "Description": "Classic pizza with sauce and cheese",
-    "Deliciousness": 7,
-    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+    "id": "4",
+    "name": "Capricciosa",
+    "description": "Capricciosa är en klassisk italiensk pizza som finns på varje pizzerias meny. Ingredienserna är tomatpuré, mozzarella, cremini-svamp, kronärtskocka, svarta oliver och prosciutto cotto (italiensk kokt skinka). Capricciosan är således identisk med quattro stagionin, men där delar man istället upp ingredienserna i 4 olika sektioner.",
+    "deliciousness": "7",
+    "ImageUrl": "/sample-data/Pizzas/cap.jpg"
   },
   {
-    "Id": 5,
-    "Name": "Quattro formaggi",
-    "Description": "Classic pizza with sauce and cheese",
-    "Deliciousness": 7,
-    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+    "id": "5",
+    "name": "Quattro formaggi",
+    "description": "Quattro formaggi är en pizza med fyra sorters ost. Mozzarella är den grundläggande komponenten. De andra tre ostarna är oftast beroende på region, men traditionellt sett använder man gorgonzola, fontina och parmigiano reggiano. Quattro formaggin tros ha sitt ursprung i Lazio-regionen i början av 1700-talet.",
+    "deliciousness": "8",
+    "ImageUrl": "/sample-data/Pizzas/forma.jpg"
   },
   {
-    "Id": 6,
-    "Name": "Diavola",
-    "Description": "Classic pizza with sauce and cheese",
-    "Deliciousness": 7,
-    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+    "id": "6",
+    "name": "Diavola",
+    "description": "Pizza diavola är en av de hetaste exporterna av italiensk mat. En tydlig indikation på detta är redan namnet på pizzan, som översätts till ”djävulsk”. Och namnet säger i princip allt, varför diavola alltid bör avnjutas med försiktighet. Den eldiga smaken är resultatet av traditionella ingredienser, vilket gör den till en delikatess för de som gillar kryddiga italienska rätter.",
+    "deliciousness": "5",
+    "ImageUrl": "/sample-data/Pizzas/diavola.jpg"
   },
   {
-    "Id": 7,
-    "Name": "Frutti di mare",
-    "Description": "Classic pizza with sauce and cheese",
-    "Deliciousness": 7,
-    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+    "id": "7",
+    "name": "Frutti di mare",
+    "description": "Frutti di mare är en pizza med en intensiv smak av havet, tillagad med en bas av klassisk napolitansk pizza, mjuk och krispig, med topping av tomatsås och skaldjur (oftast scampi, musslor eller bläckfisk).",
+    "deliciousness": "3",
+    "ImageUrl": "/sample-data/Pizzas/frutti.jpg"
   },
   {
-    "Id": 8,
-    "Name": "Pizza bianco",
-    "Description": "Classic pizza with sauce and cheese",
-    "Deliciousness": 7,
-    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+    "id": "8",
+    "name": "Pizza bianco",
+    "description": "Pizza bianco är en så kallad ”vit” italiensk pizza. Den toppas inte med tomatsås utan istället vita såser så som ricotta, bechamelsås, och andra krämiga varianter.",
+    "deliciousness": "5",
+    "ImageUrl": "/sample-data/Pizzas/bianco.jpg"
   },
   {
-    "Id": 9,
-    "Name": "Margarasdita",
-    "Description": "Classic pizza with sauce and cheese",
-    "Deliciousness": 7,
-    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+    "id": "9",
+    "name": "Pizza al tegamino",
+    "description": "Pizza al tegamino, också känd som al padellino, är en italiensk pan pizza från staden Turin. Denna typ av pizza kännetecknas av degens dubbla jäsning och att den tillagas i små runda kastruller.",
+    "deliciousness": "7",
+    "ImageUrl": "/sample-data/Pizzas/tega.jpg"
   },
   {
-    "Id": 10,
-    "Name": "Margarasdita",
-    "Description": "Classic pizza with sauce and cheese",
-    "Deliciousness": 7,
-    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+    "id": "10",
+    "name": "Tonda romana",
+    "description": "Tonda romana är en papperstunn pizza från Rom. Den kan även kallas scrocchiarella, vilket betyder krispig eller knaprig. Genom att använda mindre vatten i degen (ca 55%) kan man kavla ut degen väldigt tunn utan att den går sönder.",
+    "deliciousness": "5",
+    "ImageUrl": "/sample-data/Pizzas/romana.jpg"
   },
   {
-    "Id": 11,
-    "Name": "Margariasdta",
-    "Description": "Classic pizza with sauce and cheese",
-    "Deliciousness": 7,
-    "ImageUrl": "/sample-data/Pizzas/margarita.jpg"
+    "id": "11",
+    "name": "Pizza al taglio",
+    "description": "Pizza al taglio bakas i en stor rektangulär panna och skärs sedan i bitar för att köpa i disken. Har du varit i Rom så har du säkert sett folk gå runt i staden med en bit pizza al taglio i händerna.",
+    "deliciousness": "7",
+    "ImageUrl": "/sample-data/Pizzas/taglio.jpg"
+  },
+  {
+    "id": "12",
+    "name": "Pizza fritta",
+    "description": "Pizza fritta, den friterade calzone-versionen av napolitansk pizza, uppstod som ett resultat av fattigdom när Neapel attackerades under andra världskriget och den blev känd som folkets pizza.",
+    "deliciousness": "8",
+    "ImageUrl": "/sample-data/Pizzas/fritta.jpg"
   }
 ]

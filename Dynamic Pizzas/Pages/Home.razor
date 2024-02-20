@@ -3,8 +3,9 @@
 @using static System.Net.WebRequestMethods
 @using Newtonsoft.Json
 @inject HttpClient Http
+@inject NavigationManager navManager
 
-<PageTitle>Home</PageTitle>
+<PageTitle>PizzaHome</PageTitle>
 
 
 @if(Pizzas != null)
@@ -19,8 +20,8 @@
             <div class="card-body">
                 <h5 class="card-title">@pizzaModel.Name</h5>
                 <p class="card-text">@pizzaModel.Description</p>
-                <p class="card-footer">@pizzaModel.Deliciousness</p>
-                <a class="btn btn-primary">Go to pizza</a>
+                <p class="card-footer">Deliciousness: @pizzaModel.Deliciousness</p>
+                <a @onclick="() => Navigate(pizzaModel.Id)" class="btn btn-primary">Go to pizza</a>
             </div>
            </div>
         </div>
@@ -30,6 +31,7 @@
 
 @code {
     public List<PizzaModel>? Pizzas { get; set; }
+    public int pizzaId { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
@@ -40,5 +42,10 @@
         List<PizzaModel> pizzas = JsonConvert.DeserializeObject<List<PizzaModel>>(json);
 
         Pizzas = pizzas;
+    }
+
+    private void Navigate(int id)
+    {
+        navManager.NavigateTo($"/PizzaDetails/{id}");
     }
 }

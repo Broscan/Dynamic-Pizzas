@@ -1,16 +1,78 @@
 ﻿@page "/PizzaDetails/{id:int}"
+@using Dynamic_Pizzas.Models
+@inject HttpClient Http
 
 
-<div class="card">
-    <img src="placeholder.jpg" alt="Placeholder Image">
-    <div class="card-body">
-        <h5 class="card-title">Card Title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+@if(Pizza != null)
+{
+    <div class="col-3">
+     <div class="card">
+        <img src="@Pizza.ImageUrl" alt="Placeholder Image">
+            <div class="card-body">
+            <h5 class="card-title">@Pizza.Name</h5>
+
+
+                @if (ShowInfo)
+                {   
+                    <p class="card-text">@Pizza.Description</p>
+                }
+                    <button @onclick="ToggleInfo">Toggle Info</button>
+
+
+
+                @if(Pizza.Deliciousness > 9)
+                {
+                    IfOver10 = true;
+                    <p>
+                        This pizza is already too delicious for its own
+                        good
+                    </p>
+                }
+
+                else if(Pizza.Deliciousness > 8)
+                {
+                    <p>OMG! I can’t handle the deliciousness!</p>
+                }
+
+                
+                <p class="card-footer">Deliciousness: @Pizza.Deliciousness</p>
+                <button class="btn btn-danger" @onclick="() => Increment(1)">Make more Delicious!!</button>
+            </div>
+        </div>
     </div>
-</div>
+}
+
+
 
 @code {
-	[Parameter]
-	public int Id { get; set; }
+    [Parameter]
+    public int Id { get; set; }
+    public List<PizzaModel>? Pizzas { get; set; }
+    public PizzaModel? Pizza { get; set; }
+    public bool ShowDetailsProp { get; set; } = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Pizzas = await Http.GetFromJsonAsync<List<PizzaModel>>("sample-data/Pizzas/Pizzas.json");
+
+        Pizza = Pizzas.FirstOrDefault(x => x.Id == Id);
+    }
+
+    public bool ShowInfo { get; set; } = true;
+
+    private void ToggleInfo()
+    {
+        ShowInfo = !ShowInfo;
+    }
+
+    public bool IfOver10 { get; set; } = false;
+
+    private void Increment(int n)
+    {
+        if(IfOver10 == false)
+        {
+            Pizza.Deliciousness += n;             
+        }
+
+    }
 }
